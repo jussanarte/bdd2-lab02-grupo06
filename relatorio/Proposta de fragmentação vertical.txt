@@ -1,0 +1,9 @@
+Proposta de fragmentação vertical
+
+-- Atributos de catálogo (o que o produto é)
+CREATE OR REPLACE VIEW frag_produto_catalogo AS
+  SELECT id, descricao, categoria FROM PRODUTO;
+
+-- Atributos comerciais (quanto custa e se está ativo)
+CREATE OR REPLACE VIEW frag_produto_comercial AS
+  SELECT id, preco, activo FROM PRODUTO;
