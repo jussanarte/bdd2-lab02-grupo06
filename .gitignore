@@ -1,0 +1,104 @@
+# ─────────────────────────────────────────
+#  .gitignore — BDD2 Lab 02 MercadoKwanza
+# ─────────────────────────────────────────
+
+# ── Dados sensíveis e volumes Docker ──────
+# Nunca colocar dumps com dados reais ou credenciais no Git
+*.env
+.env.*
+secrets/
+
+# Volumes Docker gerados localmente
+docker/volumes/
+mysql-data/
+mongo-data/
+
+# ── Python ────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+ENV/
+pip-log.txt
+pip-delete-this-directory.txt
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Jupyter Notebooks (se usados para análise)
+.ipynb_checkpoints/
+*.ipynb
+
+# ── MySQL / SQL ───────────────────────────
+# Dumps grandes gerados automaticamente (manter apenas os oficiais em dados/)
+*.dump
+*.sql.gz
+*.sql.bak
+
+# ── Sistema Operativo ─────────────────────
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+.nfs*
+
+# ── Editores e IDEs ───────────────────────
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains (PyCharm, DataGrip, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim / Emacs
+*.swp
+*.swo
+*~
+\#*\#
+.\#*
+
+# ── Logs e ficheiros temporários ──────────
+*.log
+*.tmp
+*.temp
+logs/
+log/
+
+# ── Relatório ─────────────────────────────
+# Manter apenas o PDF final; excluir rascunhos e ficheiros de edição
+relatorio/*.docx
+relatorio/*.odt
+relatorio/~$*
+relatorio/rascunho*
+
+# ── Notas pessoais (não devem ir para o repo do grupo) ──
+notas_pessoais/
+TODO_pessoal.txt
